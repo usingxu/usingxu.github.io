@@ -1,0 +1,171 @@
+
+/* nav style*/
+/* Add a black background color to the top navigation */
+.nav {
+    background-color: #4C584C ;
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 9999;
+  }
+  /* Style the links inside the navigation bar */
+  .nav a {
+    float: left;
+    color: #F2F2F2;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+    text-decoration: none;
+  }
+  /* Change the color of links on hover */
+  .nav a:hover {
+    background-color: #394B6F;
+    color: #F2F2F2;
+    text-decoration: none;
+  }
+  /* Add a color to the active/current link */
+  .nav a.active {
+    background-color: #394B6F;
+    color: #E7C16C;
+    text-decoration: none;
+  }
+
+
+  /*index my photo style*/
+  .myphoto{
+      width: 103%;
+      height: 550px;
+      padding-right: 0px;
+  }
+
+  /*typing effect*/
+  .typed-text{
+    font-weight: bold;
+    color: #E7C16C;
+  }
+  .cursor{
+    display: inline-block;
+    width: 3px;
+    background-color:#4C584C;
+    margin-left: 0.1rem;
+    animation: blink 1s infinite;
+  }
+  @keyframes blink{
+    0%{ background-color: #4C584C;}
+    49%{ background-color: #4C584C;}
+    50%{ background-color: transparent;}
+    99%{ background-color: transparent;}
+    100%{ background-color: #4C584C;}
+  }
+
+  /*section*/
+  .section{
+    background-color: #4C584C;
+    height: 50px;
+    border-radius: 5px;
+  }
+  .section h3{
+    color: #F2F2F2;
+    padding-left: 30px;
+    padding-top: 11px;
+    vertical-align: middle;
+  }
+
+  /*social media link icon*/
+  a.social:hover{
+    -webkit-filter: opacity(70%);
+    filter: opacity(70%);
+  }
+
+
+
+  /*school project*/
+  .school{
+    margin-top: 10px;
+    height: 300px;
+    position: relative;
+    width: 50%;
+    float: left;
+  }
+  .school-cover{
+    display: block;
+    width: 100%;
+    height: 300px;
+    -webkit-filter: grayscale(30%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(30%);
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #F2F2F2;
+  }
+  .school:hover .overlay {
+    opacity: 1;
+  }
+  .school-descrip {
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .school-descrip a{
+    color: #4C584C;
+    text-decoration: none;
+  }
+  .school-descrip a:hover{
+    color: #E7C16C;
+    text-decoration: none;
+  }
+
+ /*other photo gallery*/
+ .gallery{
+  width: fit-content;
+  margin: 20px auto;
+  height: auto;
+}
+.shooting{
+  width: calc(33% - 6px);
+  overflow:hidden;
+  height: fit-content;
+  margin:3px;
+  padding: 0;
+  display:block;
+  position:relative;
+  float:left;
+}
+.photography{
+  width: 100%;
+  transition-duration: .3s;
+  max-width: 100%;
+  display:block;
+  overflow:hidden;
+  cursor:pointer;
+}
+.shooting:hover img{
+  transform: scale(1.2);
+  transition-duration: .3s;
+  filter: grayscale(50%);
+  opacity: .7;
+}
+@media only screen and (max-width: 900px) {
+    .shooting {
+        width: calc(50% - 6px);
+    }
+}
+@media only screen and (max-width: 400px) {
+    .shooting {
+        width: 100%;
+    }
+}
